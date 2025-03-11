@@ -1,0 +1,16 @@
+
+
+    <div class="header">
+        <button class="btn-back" (click)="cerrarNuevaTarea()">&larr; Cerrar</button>
+    </div>
+
+    <div class="form-container">
+        <label for="titulo" class="form-label">Título de la tarea</label>
+        <input type="text" id="titulo" class="form-control" placeholder="Ejemplo1" #titulo>
+
+        <label for="descripcion" class="form-label">Descripción de la tarea</label>
+        <textarea id="descripcion" class="form-control" rows="5" placeholder="Ejemplo de descripción de tarea: Redactar un informe sobre las tendencias del mercado en La Habana, Cuba." #descripcion></textarea>
+
+        <button class="btn-save" (click)="addTarea(titulo.value, descripcion.value)">✔ Guardar cambios</button>
+    </div>
+
